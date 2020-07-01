@@ -1,0 +1,248 @@
+/* Variables */
+$font-header: 'Balsamiq Sans', cursive;
+$font-text: 'Tenali Ramakrishna', sans-serif;
+$color-one: #ffffff;  
+$color-two: black; 
+$color-three: gold;
+$transition: all 1s;
+
+/* Global */
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-text;
+    color: $color-two;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+    padding: 50px 50px 0 0;
+}
+
+.section-subtitle {
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+    font-weight: lighter;
+    padding-right: 50px;
+}
+
+h3 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    line-height: 0.9;
+    margin-top: 30px;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    line-height: 0.9;
+}
+
+.section-title, .section-subtitle {
+    line-height: 0.9;
+}
+
+/* First */
+.first {
+    background-image: url("https://images.pexels.com/photos/3815759/pexels-photo-3815759.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover; 
+}
+
+.wrapper {
+    display: flex;
+    padding: 20px 0 0 0;
+}
+
+.wrapper .navbar-brand {
+    flex: 20%;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.wrapper .navigation ul {
+    flex: 80%;
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 50px;
+    list-style-type: none;
+}
+
+.navigation ul li {        
+    display: inline-block; 
+    margin-right: 36px;
+    position: relative; 
+}
+
+.navigation ul li a {   
+    text-decoration: none;
+    font-family: $font-header;
+    color: $color-one;
+}
+
+.navbar-brand {
+    color: $color-three;
+}
+
+/* Splash */
+.splash { 
+    display: flex;
+}
+
+.splash-inner {
+    padding-top: 90px;
+    margin: auto;
+    max-width: 70%;
+    text-align: center;
+}
+
+.splash h1, .splash h2 {
+    color: $color-one;
+}
+
+.splash h1 {
+    margin: 0;
+    font-size: 40px;
+    word-spacing: 0px;
+    font-weight: 700;
+}
+
+.splash h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 70px;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-text;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px $color-three;
+    color: $color-one;
+    background-color: $color-three;
+    background-position: 100% 0;
+    background-size: 300%;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+/*Services*/
+.services {
+    margin: 96px 0;
+    // padding: 0 130px;
+}
+
+.ecommerce, .responsive, .security {
+    flex: 0 0 33.333%; 
+    font-size: 16px;
+    position: relative;
+    padding-right: 50px;
+}
+
+.services i {
+    font-size: 30px;
+    border: 2px solid $color-three;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: $color-three;
+    border-radius: 60%;
+    position: relative;
+    ::before {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.services .wrapper{
+        text-align: center;
+}
+
+.card-image img{
+    object-fit: cover;
+}
+
+/*Products */
+.products {
+    background-color: #eff2f5;
+    padding-bottom: 40px;
+}
+
+.products .card-image img {
+    height: 360px;
+    object-fit: cover;
+    width: 100%;
+    margin: 30px 0;
+}
+
+/* Footer */
+.page-footer {
+    margin: 48px 0;
+}
+
+.page-footer .media-links {
+    list-style-type: none;
+    text-align: center;
+    padding-right: 294px;
+}
+
+.page-footer .media-links li {
+    display: inline-block; 
+    font-size: 0;
+}
+
+.page-footer .media-links i {
+    font-size: 20px; 
+    color: $color-one;
+    background: $color-two;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 60%;
+    position: relative;
+    ::before {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.footer-wrapper {
+    display: flex;
+}
+
+// .wrapper .footer-text {
+//     // flex: 20%;
+//     margin-top: 10px;
+//     text-align: left;
+//     font-size: 20px;
+//     margin: auto;
+// }
+
+.page-footer .col-3 {
+    margin: auto;
+    font-size: 20px;
+}
