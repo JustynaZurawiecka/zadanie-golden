@@ -22,7 +22,7 @@ body {
   text-align: center;
   font-size: 48px;
   margin: 0;
-  padding: 50px 50px 0 0;
+  padding: 50px 0 0 0;
 }
 
 .section-subtitle {
@@ -30,7 +30,6 @@ body {
   margin-top: 0;
   text-align: center;
   font-weight: lighter;
-  padding-right: 50px;
 }
 
 h3 {
@@ -157,7 +156,6 @@ p {
       flex: 0 0 33.333%;
   font-size: 16px;
   position: relative;
-  padding-right: 50px;
 }
 
 .services i {
@@ -194,7 +192,19 @@ p {
   height: 360px;
   object-fit: cover;
   width: 100%;
-  margin: 30px 0;
+}
+
+.products .card {
+  background-color: white;
+  margin: 20px;
+}
+
+.products h3 {
+  margin: 0;
+}
+
+.products p {
+  padding-bottom: 30px;
 }
 
 /* Footer */
@@ -229,13 +239,96 @@ p {
   text-align: center;
 }
 
-.footer-wrapper {
+.page-footer .footer-wrapper {
   display: -ms-flexbox;
   display: flex;
 }
 
-.page-footer .col-3 {
+.page-footer .col-lg-3 {
   margin: auto;
   font-size: 20px;
+  padding-top: 20px;
+}
+
+/* Media */
+@media (max-width: 767px) {
+  .services .wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .first .navbar-brand {
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+    margin-left: 40px;
+  }
+  .first .navigation {
+    display: inline-block;
+    width: 50%;
+  }
+  .first .splash {
+    padding-bottom: 40px;
+  }
+  .first .splash h1 {
+    font-size: 36px;
+  }
+  .first .splash h2 {
+    font-size: 30px;
+  }
+  .first .btn {
+    margin: 40px 0;
+  }
+  .page-footer .media-links {
+    padding-left: 15%;
+    padding-right: 15%;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .page-footer .media-links li {
+    width: 25%;
+  }
+  .page-footer .col-sm-4 {
+    margin-top: 20px;
+  }
+  .page-footer .footer-wrapper {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .services .wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .services .box {
+    margin: 30px 0;
+  }
+  .first .navbar-brand {
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+    margin: 20px 0 0 80px;
+    padding-left: 40px;
+  }
+  .first .wrapper .navigation ul {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    margin-top: 20px;
+  }
+  .first .splash {
+    padding-bottom: 40px;
+  }
+  .first .splash h2 {
+    font-size: 68px;
+  }
+  .products .card-body {
+    padding-top: 30px;
+  }
+  .page-footer .media-links {
+    padding-right: 231px;
+  }
+  .page-footer .col-sm-5 {
+    padding-top: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
